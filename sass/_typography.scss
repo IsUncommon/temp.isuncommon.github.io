@@ -1,0 +1,21 @@
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+.title{
+	font-size: 64px; line-height: 80px;
+}
+
+.light{
+	font-weight: $light;
+}
+.normal{
+	font-weight: $normal;
+}
+.medium{
+	font-weight: $medium;
+}
+.bold{
+	font-weight: $bold;
+}

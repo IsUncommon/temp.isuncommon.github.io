@@ -1,0 +1,20 @@
+.button{
+  @include inline-block;
+  height: 60px;
+  font-size: 18px; line-height: 58px;
+  color: #fff; font-weight: $bold;
+  text-transform: uppercase;
+  padding: 0 40px;
+  background-color: #00BC9B;
+  border: 1px solid transparent;
+  text-align: center; text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  @include appearance(none);
+  outline: none;
+
+  &:hover{
+    text-decoration: none;
+    background-color: darken(#00BC9B, 2%);
+  }
+}

@@ -1,0 +1,19 @@
+
+@mixin bg-image-2x($file, $type, $width:false, $height:false) {
+  background-repeat:no-repeat;
+  background-image: url($file + '.' + $type);
+  @if $width{
+      -webkit-background-size: $width $height;  // Needed only for Android v < 3
+      background-size: $width $height;
+  }
+
+  @media print,
+  (-o-min-device-pixel-ratio: 5/4),
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi),
+  (min-resolution: 2dppx) {
+    & {
+      background-image: url($file + '@2x.' + $type);
+    }
+  }
+}

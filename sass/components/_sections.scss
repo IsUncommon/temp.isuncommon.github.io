@@ -1,0 +1,236 @@
+.section{
+	padding: 60px 0;
+
+	&_text{
+		font-size: 28px; line-height: 38px;
+	}
+}
+
+.sectionProjects{
+	background-color: #E5EDF0;
+
+	&_list{
+		list-style: none;
+
+		>li{
+			float: left;
+			width: 15.5%; height: 268px;
+			margin: 0 0.7%; margin-bottom: 20px;
+			@include border-radius(4px);
+			overflow: hidden;
+
+			&:first-of-type{
+				margin-left: 0;
+			}
+			&:nth-of-type(6n+1){
+				margin-left: 0;
+			}
+			&:nth-of-type(6n){
+				margin-right: 0;
+			}
+		}
+
+		a.imgWrapper{
+			position: relative;
+			display: block;
+			width: 100%; height: 100%;
+			overflow: hidden;
+			pointer-events: none;
+   			cursor: default;
+
+			img{
+				position: absolute; top: -999px; bottom: -999px; left: -999px; right: -999px;
+				max-width: 70%; max-height: 50%; margin: auto;
+				@include transition(all 150ms ease);
+			}
+
+			&:hover{
+
+				img{
+					max-width: 73%; max-height: 53%;
+				}
+			}
+
+			&.swiggy{
+				background-color: #F68620;
+			}
+			&.flipkart{
+				background-color: #027CD5;
+			}
+			&.yourstory{
+				background-color: #DE1B22;
+			}
+			&.fabhotels{
+				background-color: #E1AE19;
+			}
+			&.practo{
+				background-color: #02A6D8;
+			}
+			&.wah{
+				background-color: #F96643;
+			}
+			&.limeroad{
+				background-color: #D11B5B;
+			}
+			&.groupon{
+				background-color: #63AB10;
+			}
+			&.urbanclap{
+				background-color: #9B59B6;
+			}
+			&.myntra{
+				background-color: #F4F4F4;
+			}
+			&.klp{
+				background-color: #2C3E50;
+			}
+			&.simplotel{
+				background-color: #FBA100;
+			}
+			&.monkeybar{
+				background-color: #803E15;
+			}
+			&.mysmartprice{
+				background-color: #34495D;
+			}
+			&.newshunt{
+				background-color: #d0021b;
+			}
+			&.zipdial{
+				background-color: #D11F2E;
+			}
+			&.zoomcar{
+				background-color: #6ABD19;
+			}
+			&.vwo{
+				background-color: #3B1B4F;
+			}
+			&.airgol{
+				background-color: #00B7E2;
+			}
+			&.mad{
+				background-color: #F8A01A;
+			}
+			&.dunzo{
+				background-color: #616161;
+			}
+			&.pycon{
+				background-color: #FA7A75;
+			}
+			&.rubymonk{
+				background-color: #94816F;
+			}
+			&.peerwater{
+				background-color: #80AF46;
+			}
+			&.hasgeek{
+				background-color: #E95B2C;
+			}
+			&.flutura{
+				background-color: #273C88;
+			}
+			&.poshvine{
+				background-color: #2EA083;
+			}
+			&.aruba{
+				background-color: #F5831F;
+			}
+			&.mass360{
+				background-color: #007DC3;
+			}
+			&.insider{
+				background-color: #ED3139;
+			}
+			&.mygola{
+				background-color: #919191;
+			}
+			&.ubona{
+				background-color: #F4A90E;
+			}
+			&.grasshopper{
+				background-color: #040707;
+			}
+			&.ashokahub{
+				background-color: #003A5F;
+			}
+			&.choicelunch{
+				background-color: #7D4700;
+			}
+			&.burrp{
+				background-color: #C0D028;
+			}
+			&.payzippy{
+				background-color: #071AD0;
+			}
+			&.collageflow{
+				background-color: #C35465;
+			}
+			&.quint{
+				background-color: #0065A7;
+			}
+			&.agropedia{
+				background-color: #EE9B11;
+			}
+			&.vee{
+				background-color: #C64E45;
+			}
+			&.workspan{
+				background-color: #40B8DA;
+			}
+			&.sliderule{
+				background-color: #1ABC9C;
+			}
+			&.likethatonly{
+				background-color: #040608;
+			}
+			&.zomato{
+				background-color: #CB202E;
+			}
+			&.toppr{
+				background-color: #55BBEA;
+			}
+			&.healthi{
+				background-color: #AACB5A;
+			}
+			&.citrus{
+				background-color: #F6931D;
+			}
+		}
+	}
+}
+
+.sectionAbout{
+
+	&_photos{
+		list-style: none;
+
+		.photoItem{
+			float: left;
+			width: 31.9%;
+			margin: 0 0.7%;
+
+			&-small{
+				width: 16%;
+			}
+		}
+
+		.imgWrapper{
+			position: relative;
+			width: 100%; height: 540px;
+			overflow: hidden;
+
+			img{
+				position: absolute; top: -9999px; bottom: -9999px; left: -9999px; right: -9999px;
+				height: 100%; margin: auto;
+			}
+
+			&-small{
+				height: 260px;
+			}
+		}
+	}
+}
+
+.sectionContact{
+	background-color: #F8F8F8;
+}

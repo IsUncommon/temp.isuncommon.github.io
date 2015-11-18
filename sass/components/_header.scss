@@ -1,0 +1,50 @@
+.sectionHeader{
+	position: relative;
+	@include bg-image-2x("../images/bg_header", jpg);
+	background-size: cover; background-position: center;
+	background-color: #E5EDF0;
+
+	>.container{
+		height: 100%;
+	}
+
+	.logo{
+		width: 198px; height: 22px;
+		@include bg-image-2x("../images/logo", png);
+		background-size: 198px 22px; background-position: center;
+	}
+
+	.navigation{
+		list-style: none;
+		text-align: center;
+
+		>li{
+			@include inline-block;
+			margin-right: 50px;
+
+			>a{
+				color: #919698; font-weight: $medium;
+				letter-spacing: 1px; text-transform: uppercase;
+
+				&:hover{
+					color: $color-default;
+				}
+			}
+
+			&:last-of-type{
+				margin-right: 0;
+			}
+		}
+	}
+
+	&_bottom{
+		position: absolute; left: 0; right: 0; bottom: 0;
+	}
+
+	.arrowDown{
+		display: block;
+		width: 26px; height: 16px;
+		@include bg-image-2x("../images/icons/arrow_down", png);
+		background-size: 26px 16px; background-position: center;
+	}
+}

@@ -1,0 +1,6 @@
+@include font-face(Brandon Grotesque, '../fonts/Brandon/Brandon_reg');
+@include font-face(Brandon Grotesque, '../fonts/Brandon/Brandon_light',300);
+@include font-face(Brandon Grotesque, '../fonts/Brandon/Brandon_med',500);
+@include font-face(Brandon Grotesque, '../fonts/Brandon/Brandon_bld',700);
+
+$base-font-family: Brandon Grotesque;

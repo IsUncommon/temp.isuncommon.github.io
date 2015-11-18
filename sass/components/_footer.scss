@@ -1,0 +1,33 @@
+.sectionFooter{
+	padding: 30px 0;
+	background-color: #000;
+
+	>.container{
+		width: 960px;
+	}
+
+	.copyright{
+		font-size: 14px; line-height: 20px;
+		color: #999; font-weight: $medium;
+	}
+
+	&_navgation{
+		list-style: none;
+
+		>li{
+			float: left;
+			margin-right: 40px;
+
+			>a{
+				display: block;
+				font-size: 14px; line-height: 20px;
+				color: #fff; font-weight: $medium;
+				letter-spacing: 1px; text-transform: uppercase;
+			}
+
+			&:last-of-type{
+				margin-right: 0;
+			}
+		}
+	}
+}

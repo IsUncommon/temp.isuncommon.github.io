@@ -1,0 +1,60 @@
+.main-container{
+    width: 100%; max-width: 1440px; margin-left: auto; margin-right: auto;
+}
+$grid-width: 640px;
+$gutter-width: 2%;
+
+.container{
+	position: relative; width: $grid-width; margin-left: auto; margin-right: auto;
+}
+
+.grid-half{
+    display:inline; float: left; position: relative;
+    margin-left: $gutter-width; margin-right: $gutter-width;
+}
+
+$width-grid-half:  48%;
+
+.grid-half{
+    width: $width-grid-half;
+}
+
+.alpha{
+  margin-left: 0 !important;
+}
+.omega{
+  margin-right: 0 !important;
+}
+
+@include if-device(phone-tablet) {
+    .container {
+        width: 100%; padding: 0 2%;  
+    }
+
+    .phn-tab-grid-full{
+        width: 100% !important; margin-left: 0; margin-right: 0;
+    }
+}
+
+@include if-device(tablet){
+    .tab-grid-one-third-no-mar{
+        width: 33.33%;
+        margin-left: 0; margin-right: 0;
+    }
+    .tab-grid-two-third-no-mar{
+        width: 66.67%;
+        margin-left: 0; margin-right: 0;
+    }
+    .tab-grid-full{
+        width: 100% !important; margin-left: 0; margin-right: 0;
+    }
+}
+
+@include if-device(phone){
+    .phn-grid-full{
+        width: 100% !important; margin-left: 0; margin-right: 0;
+    }
+    .grid-text{
+        width: 100%; padding-left: 2%; padding-right: 2%;
+    }
+}

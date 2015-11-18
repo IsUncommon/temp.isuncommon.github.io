@@ -1,0 +1,46 @@
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
+html{
+	font-size: 14px;
+}
+
+body{
+	font-family: $base-font-family;
+	background: #fff;
+	font-size: 14px;
+	line-height: 1.6;
+	color: $color-default;
+	margin: 0; padding: 0;
+	border:none; outline: 0;
+	overflow-y:scroll;
+	min-height: 100%;
+}
+
+a{
+	color: $color-link; text-decoration: none;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+h1, h2, h3, h4, h5, p{
+	margin: 0;
+}
+
+ul{
+	margin: 0; padding: 0;
+}
+
+@include if-device(tablet){
+	html{
+		font-size: 14px;
+	}
+}
+@include if-device(phone){
+	html{
+		font-size: 13px;
+	}
+}
